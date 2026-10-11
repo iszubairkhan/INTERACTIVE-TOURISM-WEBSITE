@@ -1,7 +1,18 @@
+/* ALL FILES COMMON CSS */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    
 }
 
 body{
@@ -14,19 +25,27 @@ body{
 
 }
 
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 1rem 2rem;
     background-color: #143867;
     color: #fff;
+    flex-wrap: wrap;
+
 }
 
 .nav-link{
         text-decoration: none;
         color: #fff;
+
 }
+
+/* INDEX/MAIN PAGE CSS */
+
+
 
 .introduction{
     font-size: 30px;
@@ -64,6 +83,17 @@ body{
     line-height: 1.8;
 }
 
+#explr-btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #143867;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOD FILE CSS */
 .food-hub{
     font-size: 30px;
     padding: 50px;
@@ -84,7 +114,56 @@ body{
     font-size: 30px;
 }
 
-#explr-btn{
+.dish-list{
+    list-style-type: none;
+}
+.highlights-list{
+    list-style-type: none;
+}
+
+/* ATTRACTIONS FILE CSS */
+
+.content{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+}
+
+/* CONTACTS FILE CSS */
+
+.contact-form{
+    font-size: 20px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    background-color: #cd8bce;
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.FAQ-section{
+    font-size: 30px;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.contact-input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn{
     padding: 10px 20px;
     font-size: 18px;
     background-color: #143867;
@@ -92,4 +171,107 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #143867;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+    
 }
