@@ -17,7 +17,7 @@ img{
 
 body{
     background-color: #37bfef;
-    background-image: url('../images/hero-bg.jpg');
+    background-image: url('../images/hero-bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,32 +27,102 @@ body{
 
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #143867;
-    color: #fff;
-    flex-wrap: wrap;
+    padding: 1.25rem 4rem;
+    z-index: 100;
+    background: rgba(11, 19, 43, 0.45);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+.navbar-name{
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
 }
 
 .nav-link{
-        text-decoration: none;
-        color: #fff;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
 
+.nav-link:hover, 
+.nav-link:active{
+    color: #ffffff;
+}
+
+.nav-btn{
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px; /* Pill shape */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover, .nav-btn:active{
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* INDEX/MAIN PAGE CSS */
 
+.intro-p{
+    background-color: rgba(57, 42, 42, 0.5);
+    width: fit-content;
+    border-radius: 18px;
+    padding: 8px;
+}
 
+#intro-main-line{
+    font-size: 80px;
+    color: #fff;
+    line-height: 1.0;
+
+}
+
+.intro-text{
+    padding: 50px;
+    text-align: left;
+    color: #fff;
+   
+}
 
 .introduction{
-    font-size: 30px;
+    margin-top: 100px;
     padding: 50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #fff;
-    line-height: 1.8;
+    width: 100vh;
+    height: 100vh;
+
+
 }
 
 .Hero-Banner{
@@ -68,7 +138,6 @@ body{
 
 .city-intro{
     font-size: 30px;
-
     padding: 50px;
     text-align: center;
     color: #fff;
@@ -84,12 +153,13 @@ body{
 }
 
 #explr-btn{
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #143867;
+    background-color: #a74a82;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -267,7 +337,9 @@ body{
 
 
 footer{
-    background-color: #143867;
+    background: rgba(11, 19, 43, 0.45);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 15px;
     color: #fff;
     text-align: center;
