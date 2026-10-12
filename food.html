@@ -6,8 +6,8 @@
     <title>Dil-e-Delhi - Food</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="navbar">            
+<body class="food-page">
+    <header class="navbar">
         <a class="navbar-name" href="index.html">Dil-e-Delhi</a>
         <nav class="nav-links">
         <a class="nav-link" href="index.html">HOME</a>
@@ -19,16 +19,28 @@
         <a href="contacts.html" class="nav-btn">Plan Visit</a>
     </header>
 
-
     <div class="introduction">
-        <p>Welcome to the Food section of Dil-e-Delhi!</p>
-        <p>Here you can find information about the best food spots in Delhi.</p>
-        <p>Explore the diverse culinary scene and taste the flavors of our city.</p>
-        <p>Discover the hidden gems and must-try dishes that make Delhi a food lover's paradise.</p><br>
-                <p>Check out the food spots below and plan your culinary adventure in Delhi!</p>
+        <div class="intro-text">
+            <div class="intro-p">
+                <p>TASTE THE FLAVORS OF DELHI</p>
+            </div>
+            <p id="intro-main-line">Savor the <br>
+                Flavors of Delhi</p>
+            <p>Explore the diverse culinary scene and discover the<br>
+                dishes that make India's capital city unforgettable.</p>
+            <button class="btn" id="explr-btn">Explore Food &gt;</button>
+        </div>
     </div>
+
     <div class="content">
+        <div class="Hero-Banner">
+            <p>Discover the food spots and flavors that make Delhi a food lover's paradise.</p>
+            <h2>Delhi on a Plate</h2>
+            <p>From historic Mughlai kitchens to lively street food stalls, every bite tells a story.</p>
+        </div>
+
         <div class="food-hub">
+            <h3>Best Food Spots in Delhi</h3>
             <div class="food-card">
                 <div class="card-content">
                     <h4>Dilli Hills</h4>
@@ -60,7 +72,8 @@
             <div class="must-try-dishes">
                 <h3>Must-Try Dishes in Delhi</h3>
                 <ul class="dish-list">
-                    <li> <img src="images/butterchicken.jpg" alt="Butter Chicken" width="300" height="200"><br>
+                    <li>
+                        <img src="images/butterchicken.jpg" alt="Butter Chicken" width="300" height="200"><br>
                         <span>Butter Chicken</span>
                     </li>
                     <li>
@@ -68,7 +81,7 @@
                         <span>Chole Bhature</span>
                     </li>
                     <li>
-                        <img src="images/parathas.jpeg" alt="Paranthas" width="300" height="200"><br>        
+                        <img src="images/parathas.jpeg" alt="Paranthas" width="300" height="200"><br>
                         <span>Paranthas</span>
                     </li>
                     <li>
@@ -80,16 +93,13 @@
                         <span>Mughlai Biryani</span>
                     </li>
                 </ul>
+            </div>
         </div>
-
     </div>
 
-
-
-
-<footer>
-    <p>&copy; 2026 Dil-e-Delhi. All rights reserved.</p><br>
-    <p>Designed by Zubair Khan</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Dil-e-Delhi. All rights reserved.</p><br>
+        <p>Designed by Zubair Khan</p>
+    </footer>
 </body>
 </html>

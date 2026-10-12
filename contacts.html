@@ -6,8 +6,8 @@
     <title>Dil-e-Delhi - Contacts</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="navbar">            
+<body class="contact-page">
+    <header class="navbar">
         <a class="navbar-name" href="index.html">Dil-e-Delhi</a>
         <nav class="nav-links">
         <a class="nav-link" href="index.html">HOME</a>
@@ -19,40 +19,57 @@
         <a href="contacts.html" class="nav-btn">Plan Visit</a>
     </header>
 
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <div class="contact-label">GET IN TOUCH</div>
+                <h1>Connect with Dil-e-Delhi</h1>
+                <p>Planning your itinerary or have recommendations to<br>
+                    share? We'd love to hear from you.</p>
 
-    <div class="introduction">
-        <p>If you have any questions or need assistance, feel free to contact us!</p>
-        <p>You can reach us through the following methods:</p>
-        <p>Phone: +91 11 12345678</p>
-        <p>Email: info@dil-edelhi.com</p>
-    </div>
+                <div class="contact-details">
+                    <a class="contact-detail-card" href="mailto:hello@dil-e-delhi.com">
+                        <span class="contact-detail-label">&#9993; EMAIL</span>
+                        <span>hello@dil-e-delhi.com</span>
+                    </a>
+                    <a class="contact-detail-card" href="tel:+911112345678">
+                        <span class="contact-detail-label">&#9742; HELPLINE</span>
+                        <span>+91 11 1234 5678</span>
+                    </a>
+                </div>
 
-        <div class="content">
-            <p>We value your feedback and look forward to hearing from you!</p>
-            <p>Please fill out the contact form below and we will get back to you as soon as possible.</p>
-        </div>
-           <div class="contact-form">
-            <h3 style="margin-bottom: 10px; color: #000000;">CONTACT FORM</h3>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input class="contact-input" type="text" id="name" name="name" required> <br>
+                <a class="contact-hero-button" href="#contact-form">Send Message <span>&rsaquo;</span></a>
+            </div>
+        </section>
 
-                <label for="email">Email:</label>
-                <input class="contact-input" type="email" id="email" name="email" required><br>
-
-                <label for='preferred-travel-dates'>Preferred Travel Date:</label>
-                <input class="contact-input" type="date" id="preferred-travel-dates" name="preferred-travel-dates" required>  <br>
-
-                <label for="interests">Interests (eg. Travel, Food, Culture):</label>
-                <textarea class="contact-input" id="interests" name="interests" rows="4" required></textarea><br>
-
-                <button class="submit-btn" type="submit">Submit</button>
-            </form>
-
+        <section class="contact-content">
+            <div class="contact-introduction">
+                <h2>Let’s plan your Delhi experience</h2>
+                <p>We value your feedback and look forward to hearing from you!</p>
+                <p>Send us your questions, travel dates, and interests and we will get back to you as soon as possible.</p>
             </div>
 
-            <div class='FAQ-section'>
-                <h3>Frequently Asked QueSstions</h3>
+            <div class="contact-form" id="contact-form">
+                <h3>CONTACT FORM</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input class="contact-input" type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input class="contact-input" type="email" id="email" name="email" required>
+
+                    <label for="preferred-travel-dates">Preferred Travel Date:</label>
+                    <input class="contact-input" type="date" id="preferred-travel-dates" name="preferred-travel-dates" required>
+
+                    <label for="interests">Interests (e.g. Travel, Food, Culture):</label>
+                    <textarea class="contact-input" id="interests" name="interests" rows="4" required></textarea>
+
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="FAQ-section">
+                <h3>Frequently Asked Questions</h3>
                 <div class="faq-item">
                     <h4>What are the best times to visit Delhi?</h4>
                     <p>The best times to visit Delhi are during the cooler months from October to March.</p>
@@ -65,14 +82,13 @@
                     <h4>Are there any safety tips for tourists?</h4>
                     <p>It's advisable to stay in well-populated areas, avoid traveling alone at night, and keep your belongings secure. Always follow local guidelines and regulations.</p>
                 </div>
-        </div>
+            </div>
+        </section>
+    </main>
 
-
-
-
-<footer>
-    <p>&copy; 2026 Dil-e-Delhi. All rights reserved.</p><br>
-    <p>Designed by Zubair Khan</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Dil-e-Delhi. All rights reserved.</p><br>
+        <p>Designed by Zubair Khan</p>
+    </footer>
 </body>
 </html>
