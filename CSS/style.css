@@ -15,17 +15,6 @@ img{
     
 }
 
-body{
-    background-color: #37bfef;
-    background-image: url('../images/hero-bg.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-}
-
-
 .navbar{
     position: fixed;
     top: 0;
@@ -91,6 +80,31 @@ body{
 
 /* INDEX/MAIN PAGE CSS */
 
+.home-page{
+    background-color: #37bfef;
+    background-image: url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home-page .introduction{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin-top: 0;
+    padding: 9rem 4rem 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.home-page .intro-text{
+    max-width: 850px;
+}
+
 .intro-p{
     background-color: rgba(57, 42, 42, 0.5);
     width: fit-content;
@@ -99,7 +113,7 @@ body{
 }
 
 #intro-main-line{
-    font-size: 80px;
+    font-size: clamp(3.5rem, 7vw, 5rem);
     color: #fff;
     line-height: 1.0;
 
@@ -153,6 +167,7 @@ body{
 }
 
 #explr-btn{
+    display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
@@ -161,9 +176,44 @@ body{
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    text-decoration: none;
+    line-height: 1.4;
+    vertical-align: top;
+}
+
+@media (max-width: 700px){
+    .home-page .introduction{
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .home-page .intro-text{
+        padding: 1rem 0;
+    }
+
+    #intro-main-line{
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .home-page .intro-text > p:not(#intro-main-line){
+        max-width: 100%;
+    }
+
+    .home-page .intro-text br{
+        display: none;
+    }
 }
 
 /* FOOD FILE CSS */
+
+.food-page{
+    background-color: #37bfef;
+    background-image: url('../images/food-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .food-hub{
     font-size: 30px;
     padding: 50px;
@@ -200,7 +250,142 @@ body{
     line-height: 1.8;
 }
 
+
+.attractions-page{
+    background-color: #37bfef;
+    background-image: url('../images/attractions-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 /* CONTACTS FILE CSS */
+
+.contact-page{
+    background-color: #37bfef;
+    background-image: url('../images/contacts-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contact-hero{
+    min-height: 100vh;
+    padding: 9rem 2rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(5, 18, 32, 0.28), rgba(5, 18, 32, 0.55));
+}
+
+.contact-hero-content{
+    max-width: 900px;
+}
+
+.contact-label{
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(27, 36, 47, 0.62);
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.contact-hero h1{
+    margin: 0.7rem 0;
+    font-family: Georgia, serif;
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.contact-hero p{
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.contact-details{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.7rem 0;
+}
+
+.contact-detail-card{
+    min-width: 190px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 14px;
+    background: rgba(55, 66, 78, 0.65);
+    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-detail-card:hover{
+    background: rgba(80, 91, 104, 0.8);
+    transform: translateY(-2px);
+}
+
+.contact-detail-label{
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+}
+
+.contact-hero-button{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    background: #a74a82;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-hero-button:hover{
+    background: #bd6098;
+    transform: translateY(-2px);
+}
+
+.contact-hero-button span{
+    font-size: 1.6rem;
+    line-height: 0.7;
+}
+
+.contact-content{
+    padding: 5rem 2rem;
+    color: #fff;
+}
+
+.contact-introduction{
+    max-width: 850px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.contact-introduction h2{
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.contact-introduction p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
 
 .contact-form{
     font-size: 20px;
@@ -211,17 +396,41 @@ body{
     border: 2px solid #000000;
     border-radius: 20px;
     background-color: #cd8bce;
-    width: 50%;
+    width: min(700px, 100%);
     justify-content: center;
     margin: 0 auto;
 }
 
+.contact-form h3{
+    margin-bottom: 10px;
+    color: #000;
+}
+
 .FAQ-section{
-    font-size: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 20px;
     padding: 50px;
     text-align: center;
     color: #fff;
     line-height: 1.8;
+}
+
+.FAQ-section h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.faq-item{
+    margin: 1.25rem auto;
+}
+
+.faq-item h4{
+    font-size: 1.35rem;
+}
+
+.faq-item p{
+    font-size: 1.05rem;
 }
 
 .contact-input{
@@ -241,6 +450,45 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 700px){
+    .navbar{
+        padding: 1rem;
+    }
+
+    .nav-links{
+        gap: 0.8rem;
+    }
+
+    .nav-link{
+        font-size: 0.75rem;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+
+    .contact-hero{
+        padding: 8rem 1rem 3rem;
+    }
+
+    .contact-hero h1{
+        font-size: 3rem;
+    }
+
+    .contact-hero p br{
+        display: none;
+    }
+
+    .contact-details{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-detail-card{
+        text-align: center;
+    }
 }
 
 
