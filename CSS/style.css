@@ -78,6 +78,28 @@ img{
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+/* @media (max-width: 700px){
+    .home-page .introduction{
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .home-page .intro-text{
+        padding: 1rem 0;
+    }
+
+    #intro-main-line{
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .home-page .intro-text > p:not(#intro-main-line){
+        max-width: 100%;
+    }
+
+    .home-page .intro-text br{
+        display: none;
+    }
+} */
+
 /* INDEX/MAIN PAGE CSS */
 
 .home-page{
@@ -89,7 +111,7 @@ img{
     background-attachment: fixed;
 }
 
-.home-page .introduction{
+.introduction{
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -101,7 +123,7 @@ img{
     text-align: left;
 }
 
-.home-page .intro-text{
+.intro-text{
     max-width: 850px;
 }
 
@@ -139,16 +161,44 @@ img{
 
 }
 
-.Hero-Banner{
-    font-size: 30px;
-    height: 100vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    line-height: 1.8;
+
+.home-content {
+  width: 100%;
 }
+
+.Hero-Banner {
+  max-width: 680px;
+  width: 90%;
+  margin: 60px auto;
+  background-color: rgba(57, 42, 42, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#hero-banner-top {
+  display: inline-block;
+  background-color: rgba(27, 25, 25, 0.5);
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+#hero-banner-top p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#hero-banner-bigger-heading {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+} 
 
 .city-intro{
     font-size: 30px;
@@ -179,28 +229,6 @@ img{
     text-decoration: none;
     line-height: 1.4;
     vertical-align: top;
-}
-
-@media (max-width: 700px){
-    .home-page .introduction{
-        padding: 8rem 1.5rem 3rem;
-    }
-
-    .home-page .intro-text{
-        padding: 1rem 0;
-    }
-
-    #intro-main-line{
-        font-size: clamp(3rem, 15vw, 5rem);
-    }
-
-    .home-page .intro-text > p:not(#intro-main-line){
-        max-width: 100%;
-    }
-
-    .home-page .intro-text br{
-        display: none;
-    }
 }
 
 /* FOOD FILE CSS */
