@@ -89,7 +89,7 @@ img{
     background-attachment: fixed;
 }
 
-.home-page .introduction{
+.introduction{
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -101,7 +101,7 @@ img{
     text-align: left;
 }
 
-.home-page .intro-text{
+.intro-text{
     max-width: 850px;
 }
 
@@ -140,14 +140,29 @@ img{
 }
 
 .Hero-Banner{
-    font-size: 30px;
-    height: 100vh;
-    display: block;
+    background-color: rgba(57, 42, 42, 0.5);
+    padding: 50px;
+    border-radius: 18px;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
     line-height: 1.8;
+}
+
+#hero-banner-top{
+    background-color: rgba(27, 25, 25, 0.5);
+    padding: 10px;
+    padding-right: 0px;
+    border-radius: 30px;
+    line-height: 1.8;
+}
+
+#hero-banner-bigger-heading{
+    margin:auto;
+    font-size:50px;
+    line-height: 1;
+
 }
 
 .city-intro{
