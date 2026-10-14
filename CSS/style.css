@@ -78,6 +78,28 @@ img{
   border-color: rgba(255, 255, 255, 0.6);
 }
 
+/* @media (max-width: 700px){
+    .home-page .introduction{
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .home-page .intro-text{
+        padding: 1rem 0;
+    }
+
+    #intro-main-line{
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .home-page .intro-text > p:not(#intro-main-line){
+        max-width: 100%;
+    }
+
+    .home-page .intro-text br{
+        display: none;
+    }
+} */
+
 /* INDEX/MAIN PAGE CSS */
 
 .home-page{
@@ -139,6 +161,7 @@ img{
 
 }
 
+
 .Hero-Banner{
     background-color: rgba(57, 42, 42, 0.5);
     padding: 50px;
@@ -194,28 +217,6 @@ img{
     text-decoration: none;
     line-height: 1.4;
     vertical-align: top;
-}
-
-@media (max-width: 700px){
-    .home-page .introduction{
-        padding: 8rem 1.5rem 3rem;
-    }
-
-    .home-page .intro-text{
-        padding: 1rem 0;
-    }
-
-    #intro-main-line{
-        font-size: clamp(3rem, 15vw, 5rem);
-    }
-
-    .home-page .intro-text > p:not(#intro-main-line){
-        max-width: 100%;
-    }
-
-    .home-page .intro-text br{
-        display: none;
-    }
 }
 
 /* FOOD FILE CSS */
