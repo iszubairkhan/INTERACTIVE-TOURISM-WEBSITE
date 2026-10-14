@@ -162,31 +162,43 @@ img{
 }
 
 
-.Hero-Banner{
-    background-color: rgba(57, 42, 42, 0.5);
-    padding: 50px;
-    border-radius: 18px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: center;
-    line-height: 1.8;
+.home-content {
+  width: 100%;
 }
 
-#hero-banner-top{
-    background-color: rgba(27, 25, 25, 0.5);
-    padding: 10px;
-    padding-right: 0px;
-    border-radius: 30px;
-    line-height: 1.8;
+.Hero-Banner {
+  max-width: 680px;
+  width: 90%;
+  margin: 60px auto;
+  background-color: rgba(57, 42, 42, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-#hero-banner-bigger-heading{
-    margin:auto;
-    font-size:50px;
-    line-height: 1;
-
+#hero-banner-top {
+  display: inline-block;
+  background-color: rgba(27, 25, 25, 0.5);
+  padding: 8px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
+
+#hero-banner-top p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#hero-banner-bigger-heading {
+  font-size: 44px;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+} 
 
 .city-intro{
     font-size: 30px;
