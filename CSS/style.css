@@ -159,7 +159,7 @@ img{
     height: 100vh;
 }
 
-.Hero-Banner {
+.Home-Hero-Banner {
   max-width: 680px;
   width: 90%;
   margin: 60px auto;
@@ -174,7 +174,7 @@ img{
   box-sizing: border-box;
 }
 
-.Hero-Banner p{
+.Home-Hero-Banner p{
     color: #ffd8e8;
     letter-spacing: 0.5px;
     line-height: 1.5;
@@ -182,7 +182,8 @@ img{
     font-weight: 500;
 }
 
-#hero-banner-top {
+
+#home-Hero-banner-top {
   display: inline-block;
   background-color: rgba(27, 25, 25, 0.5);
   padding: 8px 20px;
@@ -190,12 +191,13 @@ img{
   margin-bottom: 0px;
 }
 
-#hero-banner-top p {
+#home-Hero-banner-top p {
   margin: 0;
   font-size: 14px;
+  color:#ffffff
 }
 
-#hero-banner-bigger-heading {
+#home-Hero-banner-bigger-heading {
   font-size: 44px;
   line-height: 1.2;
   margin: 0 0 16px 0;
@@ -327,6 +329,36 @@ img{
 
 
 /* FOOD FILE CSS */
+
+.Food-Hero-Banner{
+    max-width: 680px;
+    width: 90%;
+    margin: 60px auto;
+    background-color: rgba(57, 42, 42, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 60px 30px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.food-Hero-Banner h2{
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #ffffff;
+    font-size: 108px;
+    margin: 0 0 12px 0;
+}
+
+.food-hero-Banner p{
+    color: #ffd8e8;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 500;
+}
 
 .food-page{
     background-color: #37bfef;
@@ -616,6 +648,29 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.attraction-Hero-Banner{
+    max-width: 680px;
+    width: 90%;
+    margin: 60px auto;
+    background-color: rgba(57, 42, 42, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 60px 30px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.attraction-Hero-Banner p{
+    color: #ffd8e8;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 500;
 }
 
 .attraction-content{
