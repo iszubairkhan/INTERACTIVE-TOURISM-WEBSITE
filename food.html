@@ -32,69 +32,111 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="food-content">
         <div class="Hero-Banner">
             <p>Discover the food spots and flavors that make Delhi a food lover's paradise.</p>
             <h2>Delhi on a Plate</h2>
             <p>From historic Mughlai kitchens to lively street food stalls, every bite tells a story.</p>
         </div>
 
-        <div class="food-hub">
-            <h3>Best Food Spots in Delhi</h3>
-            <div class="food-card">
-                <div class="card-content">
-                    <h4>Dilli Hills</h4>
-                    <p>A popular food destination in Delhi, known for its diverse range of cuisines and vibrant atmosphere.</p>
+        <section class="food-hub">
+            <div class="food-header">
+                <div>
+                    <h3 class="food-title">Best Food Spots in Delhi</h3>
+                    <p class="food-subtitle">Explore the flavors and food spots that make Delhi a food lover's paradise.</p>
                 </div>
-            </div>
-            <div class="food-card">
-                <img src="images/karims.jpg" alt="Karim's">
-                <div class="card-content">
-                    <h4>Karim's</h4>
-                    <p>A historic restaurant in Delhi, famous for its Mughlai cuisine and rich flavors.</p>
-                </div>
-            </div>
-            <div class="food-card">
-                <img src="images/cannaughtplacefood.jpeg" alt="Connaught Place">
-                <div class="card-content">
-                    <h4>Connaught Place</h4>
-                    <p>A bustling commercial and food hub in Delhi, offering a wide variety of dining options and street food.</p>
-                </div>
-            </div>
-            <div class="food-card">
-                <img src="images/old-delhi-food.jpg" alt="Old Delhi">
-                <div class="card-content">
-                    <h4>Old Delhi</h4>
-                    <p>A historic neighborhood in Delhi, known for its vibrant markets and traditional cuisine.</p>
+                <div class="food-control">
+                    <button class="nav-arrow" onclick="document.querySelector('.food-card').scrollBy({ left: -650, behavior: 'smooth' });">&larr;</button>
+                    <button class="nav-arrow" onclick="document.querySelector('.food-card').scrollBy({ left: 650, behavior: 'smooth' });">&rarr;</button>
                 </div>
             </div>
 
+            <div class="food-card">
+                <article class="food-featured-card">
+                    <div class="food-card-content">
+                        <h3>Dilli Hills</h3>
+                        <p>A popular food destination in Delhi, known for its diverse range of cuisines and vibrant atmosphere.</p>
+                        <a href="" class="food-card-link">Explore Food <span>&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="food-featured-card">
+                    <div class="food-card-img">
+                        <span class="food-top-tag">KARIM'S &bull;</span>
+                        <img src="images/karims.jpg" alt="Karim's">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Karim's</h3>
+                        <p>A historic restaurant in Delhi, famous for its Mughlai cuisine and rich flavors.</p>
+                        <a href="" class="food-card-link">Explore Food <span>&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="food-featured-card">
+                    <div class="food-card-img">
+                        <span class="food-top-tag">CONNAUGHT PLACE &bull;</span>
+                        <img src="images/cannaughtplacefood.jpeg" alt="Connaught Place">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Connaught Place</h3>
+                        <p>A bustling commercial and food hub in Delhi, offering a wide variety of dining options and street food.</p>
+                        <a href="" class="food-card-link">Explore Food <span>&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="food-featured-card">
+                    <div class="food-card-img">
+                        <span class="food-top-tag">OLD DELHI &bull;</span>
+                        <img src="images/old-delhi-food.jpg" alt="Old Delhi">
+                    </div>
+                    <div class="food-card-content">
+                        <h3>Old Delhi</h3>
+                        <p>A historic neighborhood in Delhi, known for its vibrant markets and traditional cuisine.</p>
+                        <a href="" class="food-card-link">Explore Food <span>&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+
             <div class="must-try-dishes">
-                <h3>Must-Try Dishes in Delhi</h3>
+                <div class="dish-header">
+                    <div>
+                        <h3 class="dish-title">Must-Try Dishes in Delhi</h3>
+                        <p class="dish-subtitle">Taste the legendary flavors that define Delhi's culinary history.</p>
+                    </div>
+                    <div class="dish-control">
+                        <button class="nav-arrow" onclick="document.querySelector('.dish-list').scrollBy({ left: -300, behavior: 'smooth' });">&larr;</button>
+                        <button class="nav-arrow" onclick="document.querySelector('.dish-list').scrollBy({ left: 300, behavior: 'smooth' });">&rarr;</button>
+                    </div>
+                </div>
                 <ul class="dish-list">
-                    <li>
-                        <img src="images/butterchicken.jpg" alt="Butter Chicken" width="300" height="200"><br>
-                        <span>Butter Chicken</span>
+                    <li class="dish-item">
+                        <img src="images/butterchicken.jpg" alt="Butter Chicken">
+                        <h4>Butter Chicken</h4>
+                        <p>Best Spot<br>Moti Mahal</p>
                     </li>
-                    <li>
-                        <img src="images/cholebhature.jpg" alt="Chole Bhature" width="300" height="200"><br>
-                        <span>Chole Bhature</span>
+                    <li class="dish-item">
+                        <img src="images/cholebhature.jpg" alt="Chole Bhature">
+                        <h4>Chole Bhature</h4>
+                        <p>Best Spot<br>Sita Ram</p>
                     </li>
-                    <li>
-                        <img src="images/parathas.jpeg" alt="Paranthas" width="300" height="200"><br>
-                        <span>Paranthas</span>
+                    <li class="dish-item">
+                        <img src="images/parathas.jpeg" alt="Paranthas">
+                        <h4>Paranthas</h4>
+                        <p>Best Spot<br>Paratha Gali</p>
                     </li>
-                    <li>
-                        <img src="images/golgappe.jpeg" alt="Street Food" width="300" height="200"><br>
-                        <span>Street Food Delights (Gol Gappa)</span>
+                    <li class="dish-item">
+                        <img src="images/golgappe.jpeg" alt="Gol Gappe">
+                        <h4>Gol Gappe</h4>
+                        <p>Best Spot<br>Gol Gappe</p>
                     </li>
-                    <li>
-                        <img src="images/mughalbiryani.jpg" alt="Mughlai Biryani" width="300" height="200"><br>
-                        <span>Mughlai Biryani</span>
+                    <li class="dish-item">
+                        <img src="images/mughalbiryani.jpg" alt="Mughlai Biryani">
+                        <h4>Mughlai Biryani</h4>
+                        <p>Best Spot<br>Moti Mahal</p>
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
     </div>
 
     <footer>

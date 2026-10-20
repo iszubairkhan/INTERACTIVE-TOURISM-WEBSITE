@@ -32,42 +32,127 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="attraction-content">
         <div class="Hero-Banner">
             <p>Explore the landmarks and hidden gems that bring Delhi's history to life.</p>
-            <h2>Stories in Stone</h2>
+            <h2>Stories in <span style="color: #f59e0b;">Stone</span></h2>
+            <hr style="border: none; height: 1px; width: 60%; margin: 18px auto 26px auto; background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);">
             <p>From grand Mughal monuments to lively historic markets, every place has a story to tell.</p>
         </div>
 
-        <div class="food-hub">
-            <h3>Must-See Attractions in Delhi</h3>
-            <div class="food-card">
-                <img src="images/redfort.jpg" alt="Red Fort" width="300" height="200">
-                <div class="card-content">
-                    <h4>Red Fort</h4>
-                    <p>A historic fort in the city of Delhi, built by the Mughal Emperor Shah Jahan.</p>
+        <section class="attractions-hub">
+            <div class="attraction-header">
+                <div>
+                    <h3 class="attrac-title">Must-See Attractions in Delhi</h3>
+                    <p class="attrac-subtitle">Explore the landmarks and hidden gems that bring Delhi's rich history to life.</p>
                 </div>
-            </div>
-            <div class="food-card">
-                <img src="images/chandni-chowk.jpg" alt="Chandni Chowk" width="300" height="200">
-                <div class="card-content">
-                    <h4>Chandni Chowk</h4>
-                    <p>A historic market in the city of Delhi, known for its bustling streets and vibrant atmosphere.</p>
-                </div>
-            </div>
-            <div class="food-card">
-                <img src="images/jama-masjid.jpg" alt="Jama Masjid">
-                <div class="card-content">
-                    <h4>Jama Masjid</h4>
-                    <p>A historic mosque in the city of Delhi, built by the Mughal Emperor Shah Jahan.</p>
+                <div class="attrac-control">
+                    <button class="nav-arrow" onclick="document.querySelector('.attrac-card').scrollBy({ left: -650,behavior: 'smooth' });">&larr;</button>
+                    <button class="nav-arrow" onclick="document.querySelector('.attrac-card').scrollBy({ left: 650,behavior: 'smooth' });">&rarr;</button>
                 </div>
             </div>
 
-            <div class="must-try-dishes">
-                <h3>Mughal History</h3>
-                <p>Learn about the rich Mughal heritage of Delhi and explore the magnificent monuments they left behind.</p>
+            <div class="attrac-card">
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">RED FORT &bull;</span>
+                        <img src="images/redfort.jpg" alt="Red Fort">
+                    </div>
+                <div class="card-content">
+                    <h3>Red Fort</h3>
+                    <p>A historic fort in the city of Delhi, built by the Mughal Emperor Shah Jahan.</p>
+                    <a href="" class="card-link">
+                        Explore History <span>&rarr;</span> 
+                    </a>
+                </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">QUTUB MINAR &bull;</span>
+                        <img src="images/qutubminar.jpg" alt="Qutub Minar">
+                    </div>
+                    <div class="card-content">
+                        <h3>Qutub Minar</h3>
+                        <p>A historic minaret in the city of Delhi, built by the Mughal Emperor Qutb al-Din Aibak.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">INDIA GATE &bull;</span>
+                        <img src="images/indiagate.jpg" alt="India Gate">
+                    </div>
+                    <div class="card-content">
+                        <h3>India Gate</h3>
+                        <p>A war memorial in the city of Delhi, built to honor the soldiers who died in World War I.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">LOTUS TEMPLE &bull;</span>
+                        <img src="images/lotustemple.jpg" alt="Lotus Temple">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lotus Temple</h3>
+                        <p>A Bahá'í House of Worship in the city of Delhi, known for its unique lotus-shaped architecture.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">HUMAYUN'S TOMB &bull;</span>
+                        <img src="images/humayustomb.png" alt="Humayun's Tomb">
+                    </div>
+                    <div class="card-content">
+                        <h3>Humayun's Tomb</h3>
+                        <p>A historic tomb in the city of Delhi, built for the Mughal Emperor Humayun.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">JAMA MASJID &bull;</span>
+                        <img src="images/jama-masjid.jpg" alt="Jama Masjid">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jama Masjid</h3>
+                        <p>A historic mosque in the city of Delhi, built by the Mughal Emperor Shah Jahan.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-img">
+                        <span class="top-tag">CHANDNI CHOWK &bull;</span>
+                        <img src="images/chandni-chowk.jpg" alt="Chandni Chowk">
+                    </div>
+                    <div class="card-content">
+                        <h3>Chandni Chowk</h3>
+                        <p>A historic marketplace in the city of Delhi, known for its vibrant atmosphere and traditional shops.</p>
+                        <a href="" class="card-link">
+                            Explore History <span>&rarr;</span> 
+                        </a>
+                    </div>
+                </article>
+
             </div>
-        </div>
+        </section>
     </div>
 
     <footer>
